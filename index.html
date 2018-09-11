@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Dados usuários Github</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+	</head>
+	<body>
+		<main>
+			<h1>Busca de usuário GitHub</h1>
+			<div id="busca">		
+				<input type="text" name="ghusername" id="gh-usuario" placeholder="Github username...">				
+				<button id="botao-busca" class="botao bto-busca">Buscar</button>
+			</div>
+			<br/>
+			<div id="dados-usuario">
+				<h2>Dados Usuário</h2>
+				<img src="" id="avatar" alt="Avatar do usuário">
+				<p>Nome: <span id="nome"></span></p>
+				<p>Seguidores: <span id="seguidores"></span></p>
+				<p>Seguidos: <span id="seguidos"></span></p>
+				<p>E-mail: <span id="email"></span></p>
+				<p>Bio: <span id="bio"></span></p>
+			</div>
+			<br/>
+			<div id="lista-repos">
+				<h2>Lista de Repositórios</h2>
+			</div>
+			<div id="dados-repos" class="modal">
+				<h2 id="repositorio">Nome do Reposiório</h2>
+				<p>Estrelas: <span id="estrela"></span></p>			
+				<p>Linguagem: <span id="linguagem"></span></p>
+				<p>Descrição: <span id="descricao"></span></p>
+				<p>Link: <a id="link-repo" target="_blank" rel="noopener noreferrer" href=""></a></p>
+			</div> 
+			<div id="msg-erros">
+				<p id="erro">Ocorreu um erro, por favor tente novamente.</p>
+			</div>		
+		</main>
+		<script src="js/jquery.js"></script>
+		<script src="js/controller.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/.9.1/jquery.modal.min.css" />
+	</body>
+</html>
